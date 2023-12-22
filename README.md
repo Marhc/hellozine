@@ -39,3 +39,28 @@ echo ('Hello {0}!' -f 'World')
 Write-Host ('Hello {0}!' -f 'World')
 ```
 
+### Print on Python
+
+```py
+print('Hello World!')
+```
+
+### Print with interpolation on Python
+
+```python
+print('Hello %s!' % 'World')
+```
+
+### Print with format method on Python
+
+```python
+print('Hello {0}!'.format('World'))
+```
+
+### Print with f-Strings on Python
+
+```python
+print(f'Hello { "World" }!')
+print(f"Hello { 'World' }!")
+```
+
