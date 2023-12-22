@@ -7,7 +7,7 @@ A collection of different ways to write "Hello World!".
 echo Hello World!
 ```
 
-### Echo with interpolation on Bash
+### Echo with parameter expansion on Bash
 
 ```bash
 message='Hello @!'
@@ -45,7 +45,7 @@ Write-Host ('Hello {0}!' -f 'World')
 print('Hello World!')
 ```
 
-### Print with interpolation on Python
+### Print with string interpolation on Python
 
 ```python
 print('Hello %s!' % 'World')
@@ -57,7 +57,7 @@ print('Hello %s!' % 'World')
 print('Hello {0}!'.format('World'))
 ```
 
-### Print with f-Strings on Python
+### Print with f-strings on Python
 
 ```python
 print(f'Hello { "World" }!')
