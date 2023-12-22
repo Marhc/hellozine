@@ -10,6 +10,11 @@ echo Hello World!
 ### Echo with parameter expansion on Bash
 
 ```bash
+echo "Hello $(echo World)!"
+
+name='World'
+echo "Hello $name!"
+
 message='Hello @!'
 echo "${message/@/World}"
 ```
