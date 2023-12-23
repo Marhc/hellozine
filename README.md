@@ -69,3 +69,66 @@ print(f'Hello { "World" }!')
 print(f"Hello { 'World' }!")
 ```
 
+### Echo, print, printf and print_r on PHP
+
+```php
+<?php
+  echo "Hello World!\n";
+  print("Hello World!\n");
+  printf("Hello World!\n");
+  print_r("Hello World!\n");
+```
+
+### Printf with string interpolation on PHP
+
+```php
+<?php
+  printf("Hello %s!\n", "World");
+```
+
+### Console.log on Javascript
+
+```javascript
+console.log('Hello World!');
+```
+
+### Alert on Javascript (Browser only)
+
+```java
+alert('Hello World!');
+```
+
+### Document.write on Javascript (Browser only)
+
+```javascript
+document.write("Hello World!");
+```
+
+### Before pseudo-element on CSS
+
+```css
+body::before {
+  content: "Hello World!";
+}
+```
+
+### Select on SQL
+
+```sql
+SELECT 'Hello World!';
+```
+
+### HTML
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World!</title>
+</head>
+<body>
+    Hello World!
+</body>
+</html>
+```
+
