@@ -1,4 +1,4 @@
-# hellozin
+# Hellozine
 A collection of different ways to write "Hello World!".
 
 ### Echo on Bash
@@ -124,11 +124,73 @@ SELECT 'Hello World!';
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello World!</title>
+  <title>Hello World!</title>
 </head>
 <body>
-    Hello World!
+  <p>Hello World!</p>
 </body>
 </html>
 ```
 
+### JSON
+
+```json
+{
+  "message": "Hello World!"
+}
+```
+
+### XML
+
+```xml
+<xml>
+  <message>Hello World!</message>
+</xml>
+```
+
+### YAML
+
+```yml
+---
+message: Hello World!
+```
+
+### Markdown
+
+```markdown
+Hello World!
+
+
+```
+
+### TOML
+
+```toml
+[message]
+text = "Hello World!"
+```
+
+### CSV
+
+```csv
+message
+Hello World!
+```
+
+### jQuery
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      $("body").append("<p>Hello World!</p>");
+    });
+  </script>
+</body>
+</html>
+```
