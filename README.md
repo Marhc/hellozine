@@ -42,6 +42,9 @@ Write-Host Hello World!
 ```powershell
 echo ('Hello {0}!' -f 'World')
 Write-Host ('Hello {0}!' -f 'World')
+
+$name = 'World'
+echo "Hello $name!"
 ```
 
 ### Print on Python
@@ -79,17 +82,33 @@ print(f"Hello { 'World' }!")
   print_r("Hello World!\n");
 ```
 
-### Printf with string interpolation on PHP
+### Printf and echo with string interpolation on PHP
 
 ```php
 <?php
   printf("Hello %s!\n", "World");
+
+  $name = 'World';
+  echo "Hello $name!\n";
 ```
 
 ### Console.log on Javascript
 
 ```javascript
 console.log('Hello World!');
+```
+
+### Console.log with string interpolation on Javascript
+
+```javascript
+console.log('Hello %s!', 'World');
+```
+
+### Console.log with Template literals on Javascript
+
+```javascript
+const message = 'World';
+console.log(`Hello ${ message }!`);
 ```
 
 ### Alert on Javascript (Browser only)
