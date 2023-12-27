@@ -123,7 +123,7 @@ alert('Hello World!');
 document.write("Hello World!");
 ```
 
-### Before pseudo-element on CSS
+### CSS
 
 ```css
 body::before {
@@ -131,7 +131,7 @@ body::before {
 }
 ```
 
-### Select on SQL
+### SQL
 
 ```sql
 SELECT 'Hello World!';
@@ -202,9 +202,10 @@ Hello World!
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Hello World!</title>
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(document).ready(function() {
       $("body").append("<p>Hello World!</p>");
@@ -426,4 +427,348 @@ namespace HelloWorld.Controllers
         }
     }
 }
+```
+
+### C#
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World!");
+    }
+}
+```
+
+### String interpolation on C#
+
+```csharp
+using System;
+
+class Program
+{
+  static void Main(string[] args)
+  {
+    String name = "World";
+    Console.WriteLine($"Hello { name }!");
+    Console.WriteLine("Hello {0}!", "World");
+  }
+}
+```
+
+### Dockerfile
+
+```dockerfile
+FROM alpine:latest
+
+CMD ["echo", "Hello World!"]
+```
+
+### Docker CLI
+
+```shell
+docker run hello-world
+docker run --rm alpine:latest echo Hello World!
+```
+
+### Functional Component on React
+
+```jsx
+import React from 'react';
+
+function HelloWorld() {
+  return <h1>Hello World!</h1>;
+}
+
+export default HelloWorld;
+```
+
+### Class Component on React
+
+```jsx
+import React from 'react';
+
+class HelloWorld extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Hello World!</h1>
+      </div>
+    );
+  }
+}
+
+export default HelloWorld;
+```
+
+### Vue
+
+```vue
+<template>
+  <div>
+    <h1>{{ greeting }}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      greeting: 'Hello World!'
+    };
+  }
+};
+</script>
+```
+
+### Svelte
+
+```svelte
+<script>
+  let greeting = 'Hello World!';
+</script>
+
+<main>
+  <h1>{greeting}</h1>
+</main>
+```
+
+### Angular
+
+```ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-hello-world',
+  template: '<h1>{{ greeting }}</h1>'
+})
+export class HelloWorldComponent {
+  greeting: string = 'Hello World!';
+}
+```
+
+### Preact
+
+```jsx
+import { h, render } from 'preact';
+
+const App = () => <h1>Hello World!</h1>;
+
+render(<App />, document.body);
+```
+
+### Next
+
+```jsx
+export default function Home() {
+  return (
+    <div>
+      <h1>Hello World!</h1>
+    </div>
+  );
+}
+```
+
+### Micronaut
+
+```java
+import io.micronaut.http.annotation.Controller;
+import io.micronaut.http.annotation.Get;
+import io.micronaut.http.annotation.Produces;
+
+@Controller("/hello")
+public class HelloWorldController {
+
+    @Get("/")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String hello() {
+        return "Hello World!";
+    }
+}
+```
+
+### RESTEasy
+
+```java
+@Path("/")
+public class HelloWorldResource {
+
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public String sayHello() {
+        return "Hello World!";
+    }
+}
+```
+
+### Spring Boot
+
+```java
+@RestController
+public class HelloWorldController {
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello World!";
+    }
+}
+```
+
+### TailwindCSS
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Hello World!</title>
+</head>
+<body>
+  <div class="flex justify-center items-center h-screen">
+    <h1 class="text-4xl text-blue-500 font-bold">Hello World!</h1>
+  </div>
+</body>
+</html>
+```
+
+### Styled-Components
+
+```jsx
+import React from 'react';
+import styled from 'styled-components';
+
+const Greeting = styled.h1`
+  color: #ff00ff;
+  font-size: 24px;
+  font-weight: bold;
+`;
+
+const HelloWorld = () => {
+  return <Greeting>Hello World!</Greeting>;
+};
+
+export default HelloWorld;
+```
+
+### Bootstrap
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Hello World!</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello World!</h1>
+  </div>
+</body>
+</html>
+```
+
+### LESS (Leaner Style Sheets)
+
+```less
+@message: "Hello World!";
+@color: red;
+
+.hello-world {
+  color: @color;
+  content: @message;
+}
+```
+
+### Emotion CSS
+
+```jsx
+import React from 'react';
+import { css } from '@emotion/react';
+
+const HelloWorld = () => {
+  const helloWorldStyles = css`
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+  `;
+
+  return (
+    <div css={helloWorldStyles}>
+      Hello World!
+    </div>
+  );
+};
+
+export default HelloWorld;
+```
+
+### Stylus CSS
+
+```stylus
+hello-world
+  text-align center
+  font-size 24px
+  color #333
+
+div
+  .hello-world
+    Hello World!
+```
+
+### Lit
+
+```js
+import { html, css, LitElement } from 'lit';
+
+class HelloWorld extends LitElement {
+  static styles = css`
+    :host {
+      display: block;
+      text-align: center;
+      font-size: 24px;
+      color: #333;
+    }
+  `;
+
+  render() {
+    return html`
+      <div>
+        Hello World!
+      </div>
+    `;
+  }
+}
+
+customElements.define('hello-world', HelloWorld);
+```
+
+### JSS ("Javascript Style Sheets" or "CSS-in-JS")
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const styles = {
+  helloWorld: {
+    fontSize: '20px',
+    color: 'red',
+  },
+};
+
+const HelloWorld = () => {
+  return (
+    <div className={styles.helloWorld}>
+      Hello World!
+    </div>
+  );
+};
+
+ReactDOM.render(<HelloWorld />, document.getElementById('root'));
 ```
