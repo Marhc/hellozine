@@ -389,7 +389,9 @@ class HelloWorldView:
 
 urlpatterns = [
     path('', HelloWorldView()),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 application = get_wsgi_application()
 
