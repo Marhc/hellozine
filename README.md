@@ -774,3 +774,57 @@ const HelloWorld = () => {
 
 ReactDOM.render(<HelloWorld />, document.getElementById('root'));
 ```
+
+### React Native
+
+```jsx
+import React from 'react';
+import { Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Hello World!</Text>
+    </View>
+  );
+}
+```
+
+### Flutter
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Hello World!'),
+        ),
+        body: Center(
+          child: Text(
+            'Hello World!',
+            style: TextStyle(fontSize: 24),
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello World!")
+}
+```
